@@ -1,0 +1,9 @@
+<view class='card_container'>
+  <view class='card_container_card'>
+    <view data-index='1' style="background:#9cf;height:500rpx" class='card_item' bindtap='catchTap'>1</view>
+    <view data-index='2' style="background:#f9c;" class='card_item' bindtap='catchTap'>2</view>
+    <view data-index='3'  style="background:#c9f;" class='card_item' bindtap='catchTap'>3</view>
+    <view data-index='4' style="background:#cf9;" class='card_item' bindtap='catchTap'>4</view>
+    <view data-index='5'  style="background:#9fc;" class='card_item' bindtap='catchTap'>5</view>
+  </view>
+</view>

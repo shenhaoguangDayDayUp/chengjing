@@ -1,0 +1,30 @@
+
+<view class='container'>
+<view class="wrap" bindtouchstart="touchStart" bindtouchend="touchEnd">
+
+  <view class="nav-item {{testClass[index]}}" wx:for="{{testNav}}" data-index="{{index}}">
+    <view class='user_icon'>
+     <image src='/images/Oval.png'></image>
+    </view>
+    <view class='user_content'>
+     <view class='user_content_title'>
+       张三
+     </view>
+     <view class='user_content_content'>
+             <text decode> &nbsp;&nbsp;</text> {{item.word}}
+     </view>
+
+    </view>
+  </view>
+
+</view>
+<view class='dot'>
+<block wx:for="{{testClass}}" wx:key='{{index}}'>
+  <view class="dot_item {{item =='current'?'dot_active':'dot_default'}}"></view>
+  </block>
+</view>
+
+
+
+
+</view>
