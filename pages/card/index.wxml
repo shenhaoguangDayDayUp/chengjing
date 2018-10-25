@@ -17,7 +17,10 @@
  
   <view style='transform:translateY({{item.select?active_height :default_height}}); left:0;bottom:{{item.bottom}}; z-index:{{100 - index }};min-height:{{index==0?"156rpx":"96rpx"}};line-height:{{index==0?"156rpx":"96rpx"}} ' class='li card {{item.select?"open_card":"close_card"}} {{index%2?"green":"orange"}}'  data-index="{{index}}" bindtap='changeToggle'>
     <view class='cart_title'>{{item.title}}</view>
-     <image class='cart_arrow' src='/images/arrow.png'></image> 
+  
+     <image hidden='{{!item.select}}' class='cart_arrow' src='/images/arrow.png'></image> 
+      <view class='{{!item.select?"cart_arrow":""}}'>
+     </view>
           <view style='height:{{height}};' class='bg-gray'>
             <view style='height:{{item.select? content_height:height}}' class='card_overflow'>
              {{item.content}}

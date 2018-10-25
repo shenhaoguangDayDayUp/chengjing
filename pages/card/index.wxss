@@ -84,8 +84,8 @@ height:30rpx;
 flex:1;
 align-self:center;
 padding-bottom:10rpx;
-
 }
+
 .bg_box{
   padding-top: 10rpx;
   height: 100%;
@@ -93,6 +93,7 @@ padding-bottom:10rpx;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  position: relative;
 }
 .bg_box_title{
    font-size: 42rpx;
@@ -108,7 +109,10 @@ padding-bottom:10rpx;
     overflow: scroll;
 }
 .qa_image{
-   font-size: 42rpx;
+  position: absolute;
+  left: 0;
+  bottom:173px;
+  font-size: 42rpx;
   padding-top: 130rpx;
   text-align: center;
   width: 100%;

@@ -137,14 +137,14 @@ Page({
    var active_height = 0;
    var  content_height =0;
    if(index == 0){
-     active_height = -(wx.getSystemInfoSync().windowHeight) + 78 +2 + 'px'
+     active_height = -(wx.getSystemInfoSync().windowHeight) + 78  + 'px'
      content_height= wx.getSystemInfoSync().windowHeight -  78 -20 + 'px'
    }else{
-     active_height = -(wx.getSystemInfoSync().windowHeight) + 78 +2 + index * 48 + 'px'
+     active_height = -(wx.getSystemInfoSync().windowHeight) + 78  + index * 48 + 'px'
      content_height = wx.getSystemInfoSync().windowHeight - 78 - 10 -20 - index*48 + 'px'
 
    }
-   // 78 index 为 0 的tab 标签页的高度 10 为 文字padding-top 的高度 20 是 三角的高度和paddding-bottom 的值, 2为 当展开状态时防止被导航栏遮挡
+   // 78 index 为 0 的tab 标签页的高度 10 为 文字padding-top 的高度 20 是 三角的高度和paddding-bottom 的值,
    
    that.setData({
      
