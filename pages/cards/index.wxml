@@ -49,11 +49,11 @@ previous-margin="{{previousmargin}}" next-margin="{{nextmargin}}" bindchange="sw
   </view>  -->
   <view class='swiper-container'>
   
-    <swiper style='overflow:show;' class='swiperClass'   interval="2000" duration="500" previous-margin="30px" next-margin="30px" circular bindchange="bindchange" style='height: {{swiperHeight}}px;margin-top:150rpx'>
+    <swiper style='overflow:show;' class='swiperClass'   interval="2000" duration="500" previous-margin="40px" next-margin="40px" circular bindchange="bindchange" style='height: {{swiperHeight}}px;margin-top:150rpx'>
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">
         <view style='overflow:visible'>
               <swiper-item style='overflow:show;'>
-              <view class='user_icon' style='overflow:show;'>
+              <view class="user_icon {{swiperIndex == index ? 'icon_ative' : 'icon_quiet'}}" style='overflow:show;'>
                  <image src='/images/Oval.png'></image>
               </view> 
               <!-- <image src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}}" mode='aspectFill'>

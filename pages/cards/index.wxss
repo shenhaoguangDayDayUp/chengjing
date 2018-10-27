@@ -86,6 +86,14 @@ transition: all 0.2s ease-in 0s;
 transform: scale(0.8333333);
 transition: all 0.2s ease-in 0s;
 }
+.user_icon.icon_ative{
+  transform: none;
+transition: all 0.2s ease-in 0s;
+}
+.user_icon.icon_quiet{
+  transform: scale(0.7333333);
+transition: all 0.2s ease-in 0s;
+}
 
 .user_icon{
   overflow: hidden;
