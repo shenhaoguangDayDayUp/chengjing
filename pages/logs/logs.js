@@ -6,6 +6,8 @@ var classCatch = ['current', 'next', 'next', 'next', 'next', 'next'];
 var touch = [0, 0];
 Page({
   data: {
+    star:'',
+    end:'',
     testClass: classCatch,
     testCurrentNav: 0,
     // activeList: [{ ative: true, ative: false, ative: false, ative: false, ative: false, ative: false,}],
@@ -32,23 +34,45 @@ Page({
   },
   touchStart(e) {
     // if (touchStartFlag == 0){
-      // setTimeout(res => {
+        this.setData({
+          start: new Date().getTime()
+        })
+      
         touch[0] = e.touches[0].clientX
+    // console.log(this.data.start)
+        touchStartFlag = 0 
       //   touchStartFlag = 1
-      // }, 50)
+
     // }
 
  
   },
   touchEnd(e) {
-    // if (touchStartFlag == 1){
+    this.setData({
+      end: new Date().getTime()
+    })
+
+    console.log(touch[0])
+    console.log(touch[0] - e.changedTouches[0].clientX)
       touch[1] = e.changedTouches[0].clientX;
-      if (touch[0] - touch[1] > this.data.testNav.length + 1) {
-        this.swipNext();
-      } else if (touch[1] - touch[0] > this.data.testNav.length + 1)       {
+      if (touch[0] - touch[1] > 50) {
+ 
+            this.swipNext();
+        
+
+         
+       
+      } else if (touch[1] - touch[0] > 50)      {
+        setTimeout(res => {
+
         this.swipPrev();
+        },500)
+
       }
-      // touchStartFlag = 0 
+      touchStartFlag = 1
+
+    // if (touchStartFlag == 1){
+
     // }
 
 
@@ -58,17 +82,23 @@ Page({
     flag++;
     if (flag < this.data.testNav.length) {
       for (var i = 0; i < this.data.testNav.length; i++) {
-        if (i == flag) {
-          classCatch[i] = 'current';
-        } else if (i < flag) {
-          classCatch[i] = 'prev';
-        } else {
-          classCatch[i] = 'next';
-        }
+          if (i == flag) {
+            classCatch[i] = 'current';
+          } else if (i < flag) {
+            classCatch[i] = 'prev';
+          } else {
+            classCatch[i] = 'next';
+          }
+      
+    
       }
-      this.setData({
+      var that = this
+      setTimeout(res => {
+        that.setData({
         testClass: classCatch
+      }, 500)
       })
+      
     } else {
       flag = this.data.testNav.length - 1;
     }
@@ -86,9 +116,11 @@ Page({
           classCatch[i] = 'next';
         }
       }
+      setTimeout(res => {
       this.setData({
         testClass: classCatch
       })
+      }, 500)
     } else {
       flag = 0;
     }
