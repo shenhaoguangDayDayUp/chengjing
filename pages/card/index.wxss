@@ -85,9 +85,11 @@ flex:1;
 align-self:center;
 padding-bottom:10rpx;
 }
+
 .bg_box_img{
   height: 300rpx;
-  width: 100%
+  width: 100%;
+
 }
 
 .bg_box{
@@ -99,6 +101,22 @@ padding-bottom:10rpx;
   flex-direction: column;
   position: relative;
    overflow: scroll;
+}
+.logo-img-box{
+    position: absolute;
+    top:216rpx;
+    width: 100%;
+    height: 162rpx;
+    text-align: center;
+}
+.logo-img{
+  width: 162rpx;
+  height: 162rpx;
+
+}
+.text-box{
+  position:absolute;
+  top:72%;
 }
 .bg_box_title{
    font-size: 42rpx;

@@ -2,10 +2,17 @@
 <view class='card_box'>
     <scroll-view scroll-y="true" class='bg_box'>
       <image mode='aspectFill' class='bg_box_img' src='/images/placeholder.png'></image>
-       <view class='bg_box_title'>晨金艺术教育</view> 
+      <view class='logo-img-box'>
+       <image mode='aspectFill' class='logo-img' src='/images/Oval.png'></image>
+      </view>
+      <view class='text-box'>
+        <view class='bg_box_title'>晨金艺术教育</view> 
        <view class='bg_box_content'>
        晨金琴行成立于2011年，创办人李雪露毕业于上海音乐学院，以总分第一名的成绩顺利考入上音钢琴音乐教育系，毕业后获得艺术学学士学位证书。经过7年来的努力发展，依靠学生家长口口相传的口碑逐渐壮大。现目前拥有在上海市嘉定区的三家分店：福海路店、白银路店、与苏州花桥香榭丽店。目前琴行开设了钢琴、古筝、吉他、绘画和书法等科目。 多年来晨金琴行的学生每年参加校外考级均获得优异的成绩，并在钢琴领域上多次获得国内国际大奖，教学成绩得到学生家长的一致好评。晨金琴行本着用心专注艺术教育为原则，不辜负每一位学生家长对晨金琴行的信任与期望。
        </view> 
+      </view>
+ 
+
  
     </scroll-view>
            <view class='qa_image'>为什么选择晨金？
