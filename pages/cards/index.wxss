@@ -132,6 +132,7 @@ swiper-item{
 swiper{
   overflow: visible!important;
   height: 880rpx!important;
+    /* height: 90%!important; */
 }
 .dot{
      box-sizing: border-box;
