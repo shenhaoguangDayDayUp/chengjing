@@ -49,7 +49,7 @@ previous-margin="{{previousmargin}}" next-margin="{{nextmargin}}" bindchange="sw
   </view>  -->
   <view class='swiper-container'>
   
-    <swiper style='overflow:show;' class='swiperClass'   interval="2000" duration="500" previous-margin="40px" next-margin="40px" circular bindchange="bindchange" style='height: {{swiperHeight}}px;margin-top:150rpx !important'>
+    <swiper style='overflow:show;' class='swiperClass'   interval="2000" duration="500" previous-margin="40px" next-margin="40px" circular bindchange="bindchange" style='height: {{swiperHeight}}px;margin-top:10% !important'>
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">
         <view style='overflow:visible'>
               <swiper-item style='overflow:show;'>
